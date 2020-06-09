@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(20, 20, 20);
+
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  margin-left: 3rem;
+  padding-top: 1rem;
+}
+
+li,
+button,
+label,
+input {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  min-height: 18vh;
+  position: fixed;
+  z-index: 1;
+}
+.social-media {
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  right: 2.5rem;
+  top: 1rem;
+}
+.social-media img {
+  height: 3.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-6.5rem);
+}
+.logo img {
+  height: 8rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.spacer {
+  height: 18vh;
+}
+
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.514)),
+    url(./img/home.JPG);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#home h2 {
+  color: rgb(224, 223, 223);
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 7rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.548);
+  max-height: inherit;
+}
+#home button {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 4rem;
+  border-radius: 3rem;
+  background-color: rgb(255, 165, 30);
+  font-size: 1.7rem;
+  transition: background-color 0.1s ease-in-out;
+  cursor: pointer;
+  outline: none;
+}
+
+#home button:hover {
+  background-color: rgb(255, 184, 78);
+  transform: scale(2);
+  transform: translate(-50%, -50%);
+}
+
+section {
+  min-height: 82vh;
+  width: 100%;
+  color: rgb(224, 223, 223);
+  text-align: center;
+  border-top: 1px solid rgb(155, 155, 155);
+  position: relative;
+  overflow: hidden;
+}
+
+section h2 {
+  font-size: 6rem;
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+
+section h3 {
+  text-align: left;
+}
+
+#home h3 {
+  width: 90%;
+  font-size: 2.5rem;
+  line-height: 7rem;
+  font-weight: 300;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 12rem;
+  padding: 2rem;
+  width: 90%;
+  text-align: center;
+}
+.tele {
+  color: rgb(255, 184, 78);
+}
+
+.timetable {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.class {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.562);
+  padding: 1rem;
+}
+
+.class h3,
+#about h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.class .age {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.time {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.class p,
+#classes p {
+  padding: 1rem 0 1rem 0;
+  font-weight: 300;
+  color: rgb(168, 168, 168);
+}
+#principle img {
+  height: 44rem;
+  padding: 2rem;
+  border-radius: 50%;
+}
+.principle-section,
+.tap-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+}
+
+.principle-text,
+.tap-text {
+  padding: 2rem;
+}
+
+#principle h3,
+#adultTap h3,
+#zumba h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+#principle h3 {
+  font-size: 1.6rem;
+}
+
+#adultTap img {
+  height: 45rem;
+  padding: 2rem;
+  opacity: 0.8;
+  border-radius: 2rem 20rem 2rem;
+}
+
+#adultTap h3 {
+  padding-bottom: 3.5rem;
+}
+
+#zumba img {
+  height: 8rem;
+  margin: 2rem 0 0 0;
+}
+
+#zumba {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.63),
+      rgba(255, 255, 255, 0.63)
+    ),
+    url(./img/zumba.jpg);
+
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.zumba-text {
+  color: black;
+  width: 70%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 3rem;
+}
+
+#zumba h3,
+#contact p {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+/* #contact p {
+  text-align: center;
+} */
+.contact-review-section {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.contact {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  /* border: 0.5px solid rgba(255, 255, 255, 0.562); */
+  padding: 2rem;
+}
+
+.map {
+  margin-right: 10rem;
+}
+
+.contact-info {
+  height: 325px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reviews {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 6rem 0rem;
+}
+
+.reviews img {
+  height: 13rem;
+  cursor: pointer;
+}
+.cards-outer {
+  width: 100%;
+  height: 38rem;
+  padding: 1rem;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.cards-inner {
+  width: 350rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 100%;
+  width: 30rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.562);
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding: 3rem;
+}
+.name {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  height: 8%;
+}
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 5%;
+  margin-top: 1rem;
+}
+.rating img {
+  height: 1rem;
+  margin: 0.1rem;
+}
+
+.content {
+  /* height: 80%; */
+  padding-top: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
